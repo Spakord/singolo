@@ -14,26 +14,45 @@
         <menu class="header__box">
             <h1 class="header__logo">SINGOLO</h1>
             <nav>
-                <ul class="nav__list">
-                    <li class="nav__list__item nav__list__item-active"><a href="#">HOME</a></li>
-                    <li class="nav__list__item"><a href="#">SERVICES</a></li>
-                    <li class="nav__list__item"><a href="#">PORTFOLIO</a></li>
-                    <li class="nav__list__item"><a href="#">ABOUT</a></li>
-                    <li class="nav__list__item"><a href="#">CONTACT</a></li>
+                <ul class="nav__list" id="nav__list">
+                    <li class="nav__list__item"><a href="#home" class="nav__list__item-active">HOME</a></li>
+                    <li class="nav__list__item"><a href="#services">SERVICES</a></li>
+                    <li class="nav__list__item"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav__list__item"><a href="#about">ABOUT</a></li>
+                    <li class="nav__list__item nav__list_contact"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </menu>
     </header>
     <main>
-        <section class="slider">
+        <section class="section__slider">
+            <a id="home"></a>
+        <div class="wrapper__slides">
+        <img class="slider__arrow slider__arrow__left" src="assets/img/slider-arrow_left.svg" alt="arrow-left">
+        <img class="slider__arrow slider__arrow__right" src="assets/img/slider-arrow_right.svg" alt="arrow-left">
+        <div class="slide active">
             <div class="slider__container">
-                <img class="slider__arrow slider__arrow__left" src="assets/img/slider-arrow_left.svg" alt="arrow-left">
-                <img class="slider__phone__left" src="assets/img/slider-phone_vertical.png" alt="">
-                <img class="slider__phone__right" src="assets/img/slider-phone_horizontal.png" alt="">
-                <img class="slider__arrow slider__arrow__right" src="assets/img/slider-arrow_right.svg" alt="arrow-left">
+                <div id="vertical-phone" class="vertical-phone"></div>
+                <div id="horizontal-phone" class="horizontal-phone"></div>
+                <div class="slider__phone__left">
+                    <div class="vertical-phone__button"></div>
+                    <img src="assets/img/slider-phone_vertical.png" alt="">
+                </div>
+                <div class="slider__phone__right">
+                    <div class="horizontal-phone__button"></div>
+                    <img src="assets/img/slider-phone_horizontal.png" alt="">
+                </div>
             </div>
+        </div>
+        <div class="slide slider-second" id="home">
+            <div class="slider__container">
+                <img class="slider-second__img" src="assets/img/Slider.png" alt="">
+            </div>
+        </div>
+        </div>
         </section>
-        <section class="services">
+        <section class="services" >
+            <a id="services"></a>
             <div class="content-container">
                 <h2>Our Services</h2>
                 <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -83,35 +102,37 @@
                 </ul>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" > 
+            <a id="portfolio"></a>
             <div class="portfolio__wrapper">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <nav>
-                    <ul class="portfolio-nav">
-                        <li class="selected">All</li>
-                        <li>Web Design</li>
-                        <li>Graphic Design</li>
-                        <li>Artwork</li>
+                    <ul class="portfolio__nav" id="nav__tags">
+                        <li class="nav__tag nav__tag_selected">All</li>
+                        <li class="nav__tag">Web Design</li>
+                        <li class="nav__tag">Graphic Design</li>
+                        <li class="nav__tag">Artwork</li>
                     </ul>
                 </nav>
                 <div class="pictures__wrapper">
-                    <img src="assets/img/portfolio-boat.png" alt="">
-                    <img src="assets/img/portfolio-smile.png" alt="">
-                    <img src="assets/img/portfolio-city.png" alt="">
-                    <img src="assets/img/portfolio-robot.png" alt="">
-                    <img src="assets/img/portfolio-rabbits.png" alt="">
-                    <img src="assets/img/portfolio-ide.png" alt="">
-                    <img src="assets/img/portfolio-robots.png" alt="">
-                    <img src="assets/img/portfolio-chickens.png" alt="">
-                    <img src="assets/img/portfolio-green-monster.png" alt="">
-                    <img src="assets/img/portfolio-text.png" alt="">
-                    <img src="assets/img/portfolio-white-monster.png" alt="">
-                    <img src="assets/img/portfolio-envelope.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-boat.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-smile.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-city.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-robot.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-rabbits.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-ide.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-robots.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-chickens.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-green-monster.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-text.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-white-monster.png" alt="">
+                    <img class="portfolio__img" src="assets/img/portfolio-envelope.png" alt="">
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" >
+            <a id="about"></a>
             <div class="about-us__wrapper">
                 <h2>About Us</h2>
                 <p class="about-us__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -158,20 +179,37 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <div class="section__wrapper">
+        <section class="quote">
+            <a id="contact"></a>
+            <div class="section__wrapper" >
                 <div class="get-a-quote__wrapper">
                     <h3>Get a Quote</h3>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div>
                 <div class="contact__wrapper">
+                    <div class="quote__modal modal">
+                        <div class="modal__overlay">
+                          <div class="modal__window">
+                            <div class="modal__header">
+                              <p class="modal__sending"><b>Письмо отправлено</b></p>
+                              <p class="modal__subject"></p>
+                            </div>
+                            <div class="modal__body">
+                              <p class="modal__description"></p>
+                            </div>
+                            <div class="modal__footer">
+                              <button class="button">Ok</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <div class="input__wrapper">
-                        <form class="input__wrapper"action="">
-                            <input class="input__style" type="text" required placeholder="Name (Required)">
-                            <input class="input__style" type="email" required placeholder="Email (Required)">
-                            <input class="input__style" type="tel" placeholder="Subject">
-                            <textarea class="input__style" name="" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                            <input class="button" type="submit" value="Submit">
+                        <form class="input__wrapper form" action="#" method="post">
+                            <input class="input__style name" type="text" name="name" required placeholder="Name (Required)">
+                            <input class="input__style email" type="email" name="email" required placeholder="Email (Required)">
+                            <input class="input__style subject" type="text" name="subject" placeholder="Subject">
+                            <textarea class="input__style form__textarea_value" name="describe" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                            <input class="button form__submit" type="submit" value="Submit">
                         </form>
                     </div>
                     <div class="contact-info__wrapper">
@@ -209,5 +247,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
