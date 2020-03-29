@@ -1,4 +1,6 @@
-
+window.onload = function () {
+  burgerMenuHandler();
+}  
 //Header navigation
 let menu = document.querySelector('nav ul'); 
 menu.addEventListener('click', (e) => {
@@ -32,6 +34,18 @@ function onScroll(event) {
   });
 }
 
+const burgerMenuHandler = () => {
+  const burgerButton = document.querySelector('.burger_button');
+  const mobileMenuBG = document.querySelector('.header__mobile_background');
+  const menuItems = document.querySelectorAll('.menu__item');
+
+  burgerButton.addEventListener('click', drawMenu);
+  mobileMenuBG.addEventListener('click', drawMenu);
+  menuItems.forEach(menuItem => {
+    menuItem.addEventListener('click', drawMenu);
+  })
+
+}
 //Portfolio. Switching tabs
 
 let portfolioImages = document.querySelectorAll('.portfolio__img');

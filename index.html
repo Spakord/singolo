@@ -10,11 +10,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <menu class="header__box">
+            <div class="header__mobile_background"></div>
+            <img src="./assets/img/burger-menu-icon.svg" alt="burger icon" class="burger_button">
             <h1 class="header__logo">SINGOLO</h1>
-            <nav>
-                <ul class="nav__list" id="nav__list">
+            <nav class="nav">
+                <ul class="nav__list menu" id="nav__list">
                     <li class="nav__list__item"><a href="#home" class="nav__list__item-active">HOME</a></li>
                     <li class="nav__list__item"><a href="#services">SERVICES</a></li>
                     <li class="nav__list__item"><a href="#portfolio">PORTFOLIO</a></li>
@@ -31,14 +33,14 @@
         <img class="slider__arrow slider__arrow__left" src="assets/img/slider-arrow_left.svg" alt="arrow-left">
         <img class="slider__arrow slider__arrow__right" src="assets/img/slider-arrow_right.svg" alt="arrow-left">
         <div class="slide active">
-            <div class="slider__container">
+            <div class="slider__container main-slider">
                 <div id="vertical-phone" class="vertical-phone"></div>
                 <div id="horizontal-phone" class="horizontal-phone"></div>
-                <div class="slider__phone__left">
+                <div class="phone slider__phone__left">
                     <div class="vertical-phone__button"></div>
                     <img src="assets/img/slider-phone_vertical.png" alt="">
                 </div>
-                <div class="slider__phone__right">
+                <div class="phone slider__phone__right">
                     <div class="horizontal-phone__button"></div>
                     <img src="assets/img/slider-phone_horizontal.png" alt="">
                 </div>
@@ -116,18 +118,18 @@
                     </ul>
                 </nav>
                 <div class="pictures__wrapper">
-                    <img class="portfolio__img" src="assets/img/portfolio-boat.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-smile.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-city.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-robot.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-rabbits.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-ide.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-robots.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-chickens.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-green-monster.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-text.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-white-monster.png" alt="">
-                    <img class="portfolio__img" src="assets/img/portfolio-envelope.png" alt="">
+                    <div class="portfolio__img"> <img src="assets/img/portfolio-boat.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-smile.png" alt=""></div> 
+                    <div class="portfolio__img"><img src="assets/img/portfolio-city.png" alt=""></div> 
+                    <div class="portfolio__img"><img src="assets/img/portfolio-robot.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-rabbits.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-ide.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-robots.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-chickens.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-green-monster.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-text.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-white-monster.png" alt=""></div>
+                    <div class="portfolio__img"><img src="assets/img/portfolio-envelope.png" alt=""></div>
                 </div>
             </div>
         </section>
